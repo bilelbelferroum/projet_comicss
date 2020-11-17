@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+html{
+    font-size: 62.5%;
+    background:  url(../asset/HWu44Bv.png) no-repeat fixed center center / cover;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+    /* pour l'opacité */
+    opacity: 0.93;
+}
+
+h1,h2,ol{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+h1 { 
+    font: 3rem 'Zhi Mang Xing', cursive;
+
+}
+
+h2 { 
+    font: 3rem 'Zhi Mang Xing', cursive;
+
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* theme css */
+:root{
+    --color-bg-default: #7e3939;
+    --color-link: #333;
+    --color-body: #fafafa;
+    --header-color: rgb(52, 195, 214);
+}
+header, main{ 
+    max-width: 78rem; /* largeur*/
+    border: 0.1rem solid transparent;
+    margin: 0 auto; /*centre la page*/
+    background-color: rgb(251, 253, 252); /*couleur arriere plan du bloc principal*/
+}
+header h1{
+    line-height: 4rem;
+    text-align: center;
+    font-size: 4rem;
+     }
+header{
+    margin:  9; /* top droite gauche bas */
+    padding: 3.5rem;
+}
+header h1::before{    
+    content: '\2605'; /* icone unicode */
+    vertical-align: 0.3; /*alignement vertical*/
+    margin-right: 0.1rem;
+    color: rgba(231,76,60,1.0)
+}
+main{
+    padding: 0.5rem ; /*écartement des bordures des chapitres*/
+    box-shadow: 0 .6rem 0.6rem rgb(23, 147, 204);
+}
+nav ol{
+    padding-left: 5.0rem; /*éloignement du bloc de texte du sommaire par rapport aux cotés*/
+    margin: 2.0rem 0; /*éloignement du bloc de texte du sommaire de haut en bas*/
+}
+nav ol li{
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+section h2, nav h2{
+    /* ajouter une propriété */
+    position: sticky; 
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--header-color);
+    line-height: 4.5rem;
+    text-transform: capitalize;
+    box-shadow: 0 0.3 0 rgb(204, 23, 23);
+    text-shadow: .1rem .1rem 0 #ccc;
+    color: #fafafa;
+    padding: .5rem;
+
+}
+section .history, section, .history {
+    transition-duration: 0.5s; /* la transition lors du clic*/
+}
+section .history:target{
+    background-color: var(--color-bg-default); /*couleur de la transition*/
+}
+section img{
+    display: block;
+    width: 100%   /*ajustement image*/
+    
+}
+section p{
+    padding: 0.5rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}
+main footer{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .5rem;
+}
+
